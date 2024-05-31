@@ -1,50 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>Extension ID Finder</title>
-</head>
-<body class="bg-dark text-light"> 
-    <div class="container text-center">
-        <h1 class="display-1">Extension Person Finder</h1>
-        <p class="h6">Find the caller by the extension number</p>
-        <div class="row">
-            <div class="col-4 mx-auto">
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Enter Extension number</label>
-                    <input type="number" class="form-control" id="extNum" onkeyup="findExtension()">
-                  </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-12 px-5">
-        <table class="table table-dark table-striped">
-            <thead>
-                <tr>
-                  <th scope="col">id</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Department / Designation</th>
-                  <th scope="col">Extension</th>
-                </tr>
-              </thead>
-              <tbody class="body">
-                
-              </tbody>
-        </table>
-    </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-<script src="./index.js"></script>
-
-<!-- <script>
-    const extensions = [
+const extensions = [
     {
         "id": "1",
         "extension": "103",
@@ -1149,14 +1103,10 @@ function findExtension() {
         tbody.appendChild(tr);
     });
     setInterval(() => {
-        if(inputVal === ''){
+        if(inputVal === '') {
             populateTable();
         }
     }, 2000);
 }
+
 populateTable();
-
-</script> -->
-
-</body>
-</html>
